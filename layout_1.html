@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout_1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+            text-decoration: none;
+            font-size: 40px;
+            font-weight: 500;
+            overflow: hidden;
+
+        }
+
+        #main {
+            /* border: 21vh solid black; */
+            height: 100vh;
+            border-style: solid;
+            /* border-width: 15vh 50vh; */
+        }
+
+        nav {
+            height: 20%;
+            border-style: solid;
+            border-color: white;
+            border-width: 10px 23px;
+            background-color: yellow;
+            border-radius: 1%;
+        }
+
+        .container {
+            display: inline-flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 82vh;
+        }
+
+        #left-box {
+            /* height: 20%; */
+            /* border-style: solid; */
+            /* border-color: white; */
+            /* border-width: 10px 15px; */
+            /* border-radius: 1%; */
+            background-color: red;
+            /* width: 44%; */
+            /* height: 95%; */
+        }
+
+        #right-box {
+            /* height: 20%; */
+            /* border-style: solid; */
+            /* border-color: white; */
+            /* border-width: 10px 15px; */
+            /* border-radius: 1%; */
+            background-color: green;
+            /* width: 44%; */
+        }
+
+        .container>div {
+            border-style: solid;
+            border-color: white;
+            /* border-width: 20%; */
+            width: 44%;
+            height: 95%;
+
+
+
+        }
+
+        @media only screen and (max-width: 700px) {
+            nav {
+                height: 20%;
+                border-style: solid;
+                border-color: white;
+                border-width: 10px 23px;
+                background-color: yellow;
+                border-radius: 1%;
+            }
+
+            .container {
+                display: inline-flex;
+                width: 215%;
+                height: 82vh vh;
+                flex-direction: column;
+                padding: 0% 3%;
+            }
+
+            #left-box {
+                /* height: 20%; */
+                /* border-style: solid; */
+                /* border-color: white; */
+                /* border-width: 10px 15px; */
+                /* border-radius: 1%; */
+                background-color: red;
+                /* height: 95%; */
+            }
+
+            .container>div {
+                border-style: solid;
+                border-color: white;
+                /* border-width: 20%; */
+                width: 44%;
+
+            }
+
+            #right-box {
+                /* height: 20%; */
+                /* border-style: solid; */
+                /* border-color: white; */
+                /* border-width: 10px 15px; */
+                /* border-radius: 1%; */
+                background-color: green;
+                /* height: 95%; */
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <nav>Navigation</nav>
+        <div class="container">
+            <div id="left-box">Left-Box</div>
+            <div id="right-box">Right-Box</div>
+        </div>
+
+    </div>
+</body>
+
+</html>
